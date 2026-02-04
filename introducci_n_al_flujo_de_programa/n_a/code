@@ -1,0 +1,21 @@
+#include <iostream>
+
+int calculateReward(int customerPosition) {
+    int reward = 100;
+    for (int i = 0; i < 16; i++) {
+        reward += 50;
+        std::cout << "persona" << i << "cnatidad" << reward << std::endl;
+    }
+    return reward;
+}
+
+int main() {
+    int customer = 15;
+    int reward = calculateReward(customer);
+
+    std::cout << "The reward for the " << customer 
+              << "th customer is: " << reward << " points." << std::endl;
+
+    
+    return 0;
+}
